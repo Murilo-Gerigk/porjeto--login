@@ -23,7 +23,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
@@ -34,6 +33,7 @@ section#login{
 
     transition: width .5, height .5;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -64,6 +64,18 @@ form > div.campo{
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > input{
+    font-size: 1em;
+    height: 100%;
+    border-radius: 5px;
+    padding: 4px;
+    width: 100%;
 }
 
 form > input[type=submit]{
